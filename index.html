@@ -1,70 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lab Activity</title>
-    <!-- Bootstrap Link -->
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pikachu Profile</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <!-- CSS -->
+   <link rel="stylesheet" href="./index.css">
 </head>
-<body class="bg-white">
-    
-    <!-- Nav-Bar -->
-    <div class="d-flex p-2 bg-white text-black fw-bold border-5 border-bottom border-danger sticky-top">
-        <div class="me-auto"><h1 class="text-warning fw-bold">Pikachu</h1></div>
-        <div class="d-flex">
-            <div class="p-3">Home</div>
-            <div class="p-3">Skills</div>
-            <div class="p-3">Evolution</div>
-            <div class="p-3">Trainer</div>
-        </div>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-light navbar-custom sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#"><h1 class="text-warning fw-bold">Pikachu</h1></a>
+      <div class="d-flex">
+        <a class="nav-link" href="#">Home</a>
+        <a class="nav-link" href="#skills">Skills</a>
+        <a class="nav-link" href="#evolution">Evolution</a>
+        <a class="nav-link" href="#trainer">Trainer</a>
+      </div>
     </div>
-
-
-    <!-- Image Tab -->
-    <div class="d-flex">
-        <img src="https://4kwallpapers.com/images/wallpapers/pikachu-adorable-3440x1440-18491.jpg" class="vh-100 img-fluid">
+  </nav>
+  
+  <!-- IMAGE -->
+  <div class="container d-flex flex-wrap align-items-center justify-content-center py-5">
+    <img src="https://wallpapers.com/images/featured/pikachu-4k-uzcr6pdp4a36rrd4.jpg" class="col-lg-5 col-md-6 img-fluid rounded-3 mb-4 mb-lg-0">
+    <div class="text-center px-4" id="home">
+      <h1>Pikachu</h1>
+      <p class="lead">An Electric-type Pokémon known for its lightning powers and adorable charm.</p>
+      <li>Species: Mouse Pokémon</li>
+      <li>Height:	0.4 m (1′04″)</li>
+      <li>Weight:	6.0 kg (13.2 lbs)</li>
     </div>
+  </div>
 
-    <!-- Skills -->
-    <div class="container-fluid p-lg-4 row d-flex justify-content-around bg-dark border-5 border-bottom border-danger">
-        <h3 class="text-warning my-4 text-center">Pikachu Skills</h3>
-
-        <div  class="col-md-2 text-center text-light bg bg-danger p-3 rounded-3 my-4">
-                <h5 class="my-3">Thunderbolt</h5>
-                <h6>A strong electric blast; Pikachu’s iconic move.</h6>
-                <div class="type_icon type_electric">Electric</div>
+  <!-- SKILLS SECTION -->
+  <div class="skills-section" id="skills">
+    <h3 class="text-warning text-center mb-4">Pikachu Skills</h3>
+    <div class="container">
+      <div class="row justify-content-around text-center g-4">
+        <div class="col-md-3">
+          <div class="skill-card">
+            <h5 class="mb-2">Thunderbolt</h5>
+            <p>A strong electric blast; Pikachu’s iconic move.</p>
+            <div class="type_icon">Electric</div>
+          </div>
         </div>
-
-        <div  class="col-md-2 text-center text-light bg bg-danger p-3 rounded-3 my-4">
-                <h5 class="my-3">Static</h5>
-                <h6>If a Pokémon with Static is hit by a move making contact, there is a 30% chance the foe will become paralyzed.</h6>
-                <div class="type_icon type_electric">Electric</div>
+        <div class="col-md-3">
+          <div class="skill-card">
+            <h5 class="mb-2">Static</h5>
+            <p>30% chance to paralyze foes that make contact.</p>
+            <div class="type_icon">Electric</div>
+          </div>
         </div>
-
-        <div  class="col-md-2 text-center text-light bg bg-danger p-3 rounded-3 my-4">
-                <h5 class="my-3">Electro ball</h5>
-                <h6>Damage increases the faster Pikachu is compared to the opponent.</h6>
-                <div class="type_icon type_electric">Electric</div>
+        <div class="col-md-3">
+          <div class="skill-card">
+            <h5 class="mb-2">Electro Ball</h5>
+            <p>Stronger the faster Pikachu is compared to the foe.</p>
+            <div class="type_icon">Electric</div>
+          </div>
         </div>
-
-        <div  class="col-md-2 text-center text-light bg bg-danger p-3 rounded-3 my-4">
-                <h5 class="my-3">Iron Tail</h5>
-                <h6>A hard-hitting tail attack, effective against Rock-types.</h6>
-                <div class="type_attack">Steel</div>
+        <div class="col-md-3">
+          <div class="skill-card">
+            <h5 class="mb-2">Iron Tail</h5>
+            <p>Steel-type attack using Pikachu’s tail.</p>
+            <div class="type_attack">Steel</div>
+          </div>
         </div>
+      </div>
     </div>
+  </div>
 
-    <div class="my-5">Evolutions</div>
+  <!-- EVOLUTION SECTION -->
+  <div class="container my-5 evolution-section" id="evolution">
+    <h2 class="text-center mb-4 text-warning">Evolution</h2>
+    <div class="row justify-content-center text-center">
+      <div class="col-md-4 mb-4">
+        <img src="https://img.pokemondb.net/sprites/home/normal/pichu.png" class="img-fluid" alt="Pichu">
+        <p>Pichu - Baby Electric-type Pokémon</p>
+      </div>
+      <div class="col-md-4 mb-4">
+        <img src="https://img.pokemondb.net/sprites/home/normal/pikachu.png" class="img-fluid" alt="Pikachu">
+        <p>Pikachu - Current Form</p>
+      </div>
+      <div class="col-md-4 mb-4">
+        <img src="https://img.pokemondb.net/sprites/home/normal/raichu.png" class="img-fluid" alt="Raichu">
+        <p>Raichu - Evolved Form with Thunder Stone</p>
+      </div>
+    </div>
+  </div>
 
+  <!-- TRAINER SECTION -->
+  <div class="container my-5" id="trainer">
+    <h2 class="text-center mb-4 text-warning">Trainers</h2>
+    <div class="row text-center justify-content-center g-4">
+      <div class="col-md-5">
+        <div class="p-4 rounded bg-warning-subtle border border-warning shadow-sm">
+          <h5>Ash Ketchum</h5>
+          <p>The most iconic Pokémon trainer. Pikachu’s best friend since day one.</p>
+        </div>
+      </div>
+      <div class="col-md-5">
+        <div class="p-4 rounded bg-warning-subtle border border-warning shadow-sm">
+          <h5>Red</h5>
+          <p>Famous silent trainer known for his strong bond with Pikachu in the games.</p>
+        </div>
+      </div>
+    </div>
+  </div>
 
+  <!-- MINI FOOTER -->
+  <footer>
+    <h6>2025 Pokémon Fan Page | Jose Miguel Garcia</h6>
+  </footer>
 
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
 
-
-
-    <!-- Bootstrap Script -->
-     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
-    <!-- CSS -->
-     <link rel="stylesheet" href="./index.css">
 </body>
 </html>
