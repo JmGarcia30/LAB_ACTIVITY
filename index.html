@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,60 +10,54 @@
    <link rel="stylesheet" href="./index.css">
 </head>
 <body>
-
   <!-- NAVBAR -->
-  <nav class="navbar navbar-expand-lg navbar-light navbar-custom sticky-top">
-    <div class="container">
-      <a class="navbar-brand" href="#"><h1 class="text-warning fw-bold">Pikachu</h1></a>
-      <div class="d-flex">
-        <a class="nav-link" href="#">Home</a>
-        <a class="nav-link" href="#skills">Skills</a>
-        <a class="nav-link" href="#evolution">Evolution</a>
-        <a class="nav-link" href="#trainer">Trainer</a>
-      </div>
+    <div class="d-flex p-3 bg-dark text-light border-5 border-bottom border-warning sticky-top">
+        <div class="me-auto"><a class = "nav-link" href="#"><h1 class="text-warning fw-bold">Pikachu</h1></div>
+        <div class="d-flex">
+            <div class="p-3 text-light"><a class="nav-link" href="#top">Home</a></div>
+            <div class="p-3 text-light"><a class="nav-link" href="#skills">Skills</a></div>
+            <div class="p-3 text-light"><a class="nav-link" href="#evolution">Evolution</a></div>
+            <div class="p-3 text-light"><a class = "nav-link "href="#trainer">Trainer</a></div>
+        </div>
     </div>
-  </nav>
   
-  <!-- IMAGE -->
-  <div class="container d-flex flex-wrap align-items-center justify-content-center py-5">
-    <img src="https://wallpapers.com/images/featured/pikachu-4k-uzcr6pdp4a36rrd4.jpg" class="col-lg-5 col-md-6 img-fluid rounded-3 mb-4 mb-lg-0">
-    <div class="text-center px-4" id="home">
-      <h1>Pikachu</h1>
-      <p class="lead">An Electric-type Pokémon known for its lightning powers and adorable charm.</p>
-      <li>Species: Mouse Pokémon</li>
-      <li>Height:	0.4 m (1′04″)</li>
-      <li>Weight:	6.0 kg (13.2 lbs)</li>
-    </div>
+  <!-- IMAGE and DESCRIPTION -->
+  <div>
+    <img src="https://www.pixelstalk.net/wp-content/uploads/images6/Pikachu-Wallpaper-Desktop.jpg" class="img-fluid">
   </div>
 
   <!-- SKILLS SECTION -->
   <div class="skills-section" id="skills">
-    <h3 class="text-warning text-center mb-4">Pikachu Skills</h3>
+    <h1 class="text-warning text-center mb-4 fw-bold">Pikachu Skills</h1>
     <div class="container">
       <div class="row justify-content-around text-center g-4">
         <div class="col-md-3">
-          <div class="skill-card">
+          <div class="skill-card bg-danger p-4 rounded-4">
+            <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExY240aHB5eDI5eWJ1OGprMnA0bmVkMG95dmJjZWMyY3NwMjQwNjEwYSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/14duI6o1KQF8qs/giphy.gif" class="img-fluid rounded-4 p-1">
             <h5 class="mb-2">Thunderbolt</h5>
             <p>A strong electric blast; Pikachu’s iconic move.</p>
             <div class="type_icon">Electric</div>
           </div>
         </div>
         <div class="col-md-3">
-          <div class="skill-card">
+          <div class="skill-card bg-danger p-4 rounded-4">
+            <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExNTVkcm5wYWhjN2xkMGJibmU4dnBub3RlYjY3MGE0eHdlcGhlaGR1ZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/tM77LKMjQ3MaQAXUA8/giphy.gif" class="img-fluid rounded-4 p-1">
             <h5 class="mb-2">Static</h5>
             <p>30% chance to paralyze foes that make contact.</p>
             <div class="type_icon">Electric</div>
           </div>
         </div>
         <div class="col-md-3">
-          <div class="skill-card">
+          <div class="skill-card bg-danger p-4 rounded-4">
+            <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExYjYzczI2OGJmc2pid2VoMGg3cnZ3YWQ3YjA3eTJmMnc2ZGdqOW8wZiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/rrZIZOMy4xL1e/giphy.gif" class="img-fluid rounded-4 p-1">
             <h5 class="mb-2">Electro Ball</h5>
             <p>Stronger the faster Pikachu is compared to the foe.</p>
             <div class="type_icon">Electric</div>
           </div>
         </div>
         <div class="col-md-3">
-          <div class="skill-card">
+          <div class="skill-card bg-danger p-4 rounded-4">
+            <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExNGdrcGl3MWFnaXIxZ3UxcWIycDhsa2FlZnNjZ2cyZXkwbWo2bjlqbyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/12r4pHjvAOv48o/giphy.gif" class="img-fluid rounded-4 p-1">
             <h5 class="mb-2">Iron Tail</h5>
             <p>Steel-type attack using Pikachu’s tail.</p>
             <div class="type_attack">Steel</div>
@@ -74,26 +69,26 @@
 
   <!-- EVOLUTION SECTION -->
   <div class="container my-5 evolution-section" id="evolution">
-    <h2 class="text-center mb-4 text-warning">Evolution</h2>
-    <div class="row justify-content-center text-center">
+    <h1 class="text-center mb-4 text-warning fw-bold">Evolution</h1>
+    <div class="row justify-content-center text-center bg-dark rounded-4 p-2 border-bottom border-danger border-5 shadow">
       <div class="col-md-4 mb-4">
-        <img src="https://img.pokemondb.net/sprites/home/normal/pichu.png" class="img-fluid" alt="Pichu">
-        <p>Pichu - Baby Electric-type Pokémon</p>
+        <h4 class="mb-2 text-light">Pichu</h4>
+        <img src="https://www.pokemon.com/static-assets/content-assets/cms2/img/cards/web/EX9/EX9_EN_59.png" class="evolution-card img-fluid" alt="Pichu">
       </div>
       <div class="col-md-4 mb-4">
-        <img src="https://img.pokemondb.net/sprites/home/normal/pikachu.png" class="img-fluid" alt="Pikachu">
-        <p>Pikachu - Current Form</p>
+        <h4 class="mb-2 text-light">Pikachu</h4>
+        <img src="https://assets.pokemon.com/static-assets/content-assets/cms2/img/cards/web/SWSH1/SWSH1_EN_65.png" class="evolution-card img-fluid" alt="Pikachu">
       </div>
       <div class="col-md-4 mb-4">
-        <img src="https://img.pokemondb.net/sprites/home/normal/raichu.png" class="img-fluid" alt="Raichu">
-        <p>Raichu - Evolved Form with Thunder Stone</p>
+        <h4 class="mb-2 text-light">Raichu</h4>
+        <img src="https://www.pokemon.com/static-assets/content-assets/cms2/img/cards/web/SWSH1/SWSH1_EN_66.png" class="evolution-card img-fluid" alt="Raichu">
       </div>
     </div>
   </div>
 
   <!-- TRAINER SECTION -->
   <div class="container my-5" id="trainer">
-    <h2 class="text-center mb-4 text-warning">Trainers</h2>
+    <h1 class="text-center mb-4 text-warning fw-bold">Trainers</h1>
     <div class="row text-center justify-content-center g-4">
       <div class="col-md-5">
         <div class="p-4 rounded bg-warning-subtle border border-warning shadow-sm">
@@ -112,7 +107,7 @@
 
   <!-- MINI FOOTER -->
   <footer>
-    <h6>2025 Pokémon Fan Page | Jose Miguel Garcia</h6>
+    <h6 class="mt-2">2025 Pokémon Fan Page | Jose Miguel Garcia</h6>
   </footer>
 
   <!-- Bootstrap JS -->
